@@ -1,0 +1,33 @@
+* {
+  margin:0;
+  box-sizing:border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.display {
+  align-items: center;
+  align-self: center;
+  text-align: center;
+
+  padding:20px;
+}
+
+button {
+  width:100px;
+  margin:10px 20px;
+  padding:10px 20px;
+}
+
+.btn:hover, .active {
+  background-color: #c2c2c2;
+  color:white;
+
+  border:rgb(158, 158, 158) 1px solid;
+}
