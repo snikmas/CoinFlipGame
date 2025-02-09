@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +22,31 @@
       <button type="button" id="flip">Flip It</button>
     </form>
   </div>
+
   <div class="resultDiv">
-    <h5 class="output"></h5>
+    <div class="score"> 
+      <h5>Your Score:</h5>
+      <table>
+        <tr>
+          <td>Won:</td>
+          <td id="won"></td>
+        </tr>
+        <tr>
+          <td>Lost:</td>
+          <td id="lose"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="result">
+      <h1 class="res-h1"></h1>
+      <h5 class="heads-tails"></h5>
+      <h5 class="win-lose"></h5>
+    </div>
+    <div class="gif">
+      <img class="res-gif">
+    </div>
   </div>
 
-  <script src="game.js" defer></script>
+  <script type="module" src="game.js" defer></script>
 </body>
 </html>
